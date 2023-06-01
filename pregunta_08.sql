@@ -41,4 +41,4 @@
 --
 --  >>> Escriba su codigo a partir de este punto <<<
 --
-SELECT SUBSTR(c23, 1, 4) AS YEAR, ROUND(AVG(c21),6) FROM tbl2 GROUP BY YEAR;
+SELECT EXTRACT(YEAR FROM c23) AS YEAR, ROUND(AVG(c21)::numeric, 6) FROM tbl2 GROUP BY EXTRACT(YEAR FROM c23) ORDER BY YEAR ASC;
