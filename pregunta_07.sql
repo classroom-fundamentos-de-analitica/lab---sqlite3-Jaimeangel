@@ -43,3 +43,4 @@
 -- 
 --  >>> Escriba su codigo a partir de este punto <<<
 --
+SELECT * FROM tbl1 WHERE (NOT K0='A' AND NOT K0='B') AND (NOT c13=200 AND NOT c13=900) ORDER BY c14;
