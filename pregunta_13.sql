@@ -43,5 +43,4 @@
 -- 
 --  >>> Escriba su codigo a partir de este punto <<<
 --  
-
-SELECT K0,ROUND(avg(c12)::numeric,6) AS PROMEDIO FROM tbl1 WHERE c13>400 GROUP BY K0 ORDER BY K0 ASC;
+SELECT k0, avg(c12) FROM tbl1 WHERE c13 > 400 GROUP BY K0;
